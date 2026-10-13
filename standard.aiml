@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="1.0.1">
+
+    <!-- Greetings -->
+    <category>
+        <pattern>HELLO</pattern>
+        <template>Hello! Welcome to AIML Smart Chatbot.</template>
+    </category>
+
+    <category>
+        <pattern>HI</pattern>
+        <template>Hi there! How can I help you?</template>
+    </category>
+
+    <category>
+        <pattern>HEY</pattern>
+        <template>Hey! Nice to meet you.</template>
+    </category>
+
+    <category>
+        <pattern>GOOD MORNING</pattern>
+        <template>Good morning! Have a wonderful day.</template>
+    </category>
+
+    <category>
+        <pattern>HOW ARE YOU</pattern>
+        <template>I'm doing well, thank you! How can I help you?</template>
+    </category>
+
+    <!-- Bot identity -->
+    <category>
+        <pattern>WHAT IS YOUR NAME</pattern>
+        <template>My name is AIML Smart Chatbot.</template>
+    </category>
+
+    <category>
+        <pattern>WHO CREATED YOU</pattern>
+        <template>I am an educational project built with Python and AIML.</template>
+    </category>
+
+    <category>
+        <pattern>WHAT CAN YOU DO</pattern>
+        <template>I can respond to greetings, answer basic FAQs, and demonstrate rule-based conversations.</template>
+    </category>
+
+    <!-- AIML and Python FAQs -->
+    <category>
+        <pattern>WHAT IS AIML</pattern>
+        <template>AIML stands for Artificial Intelligence Markup Language. It uses patterns and templates to define chatbot responses.</template>
+    </category>
+
+    <category>
+        <pattern>WHAT IS PYTHON</pattern>
+        <template>Python is a general-purpose programming language known for its readable syntax and wide range of applications.</template>
+    </category>
+
+    <category>
+        <pattern>WHAT IS A CHATBOT</pattern>
+        <template>A chatbot is a program that communicates with users through text or speech.</template>
+    </category>
+
+    <category>
+        <pattern>WHAT IS YOUR PURPOSE</pattern>
+        <template>My purpose is to demonstrate a simple rule-based conversational chatbot using Python and AIML.</template>
+    </category>
+
+    <!-- Wildcard matching -->
+    <category>
+        <pattern>MY NAME IS *</pattern>
+        <template>Nice to meet you, <star/>!</template>
+    </category>
+
+    <category>
+        <pattern>I LIKE *</pattern>
+        <template>That's interesting! You like <star/>.</template>
+    </category>
+
+    <!-- Redirect another phrase to the HELLO category -->
+    <category>
+        <pattern>HOWDY</pattern>
+        <template><srai>HELLO</srai></template>
+    </category>
+
+    <!-- Fallback for unmatched messages -->
+    <category>
+        <pattern>*</pattern>
+        <template>I'm still learning and don't know that answer yet. Try asking me about Python, AIML, or my purpose.</template>
+    </category>
+
+</aiml>
